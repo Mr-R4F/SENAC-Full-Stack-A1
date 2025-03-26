@@ -1,0 +1,17 @@
+{
+  "name": "atividade-node",
+  "version": "1.0.0",
+  "main": "App.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Projeto de atividade de Node.js",
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "openweather-api-node": "^3.1.5"
+  }
+}
