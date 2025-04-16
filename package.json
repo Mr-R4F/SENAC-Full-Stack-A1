@@ -1,10 +1,25 @@
 {
+  "version": "1.0.0",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "nodemon --watch config --ext ts,tsx,js,jsx --exec tsx config/server.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "Projeto de atividade de Node.js",
   "dependencies": {
+    "axios": "^1.8.4",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
-    "express": "^5.1.0"
+    "express": "^5.1.0",
+    "tsx": "^4.19.3"
   },
   "devDependencies": {
-    "@types/express": "^5.0.1"
+    "@types/express": "^5.0.1",
+    "@types/node": "^22.14.0",
+    "nodemon": "^3.1.9",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
   }
 }
