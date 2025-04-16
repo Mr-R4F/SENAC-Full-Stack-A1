@@ -10,10 +10,12 @@
   "description": "Projeto de atividade de Node.js",
   "dependencies": {
     "axios": "^1.8.4",
-    "dotenv": "^16.4.7",
+    "cache-manager": "^6.4.2",
+    "dotenv": "^16.5.0",
     "ejs": "^3.1.10",
     "express": "^5.1.0",
-    "tsx": "^4.19.3"
+    "tsx": "^4.19.3",
+    "zod": "^3.24.2"
   },
   "devDependencies": {
     "@types/express": "^5.0.1",
