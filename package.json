@@ -1,7 +1,6 @@
 {
   "version": "1.0.0",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "serve": "nodemon --watch config --ext ts,tsx,js,jsx --exec tsx config/server.ts"
   },
   "keywords": [],
@@ -9,7 +8,9 @@
   "license": "ISC",
   "description": "Projeto de atividade de Node.js",
   "dependencies": {
+    "@types/cors": "^2.8.17",
     "axios": "^1.8.4",
+    "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "ejs": "^3.1.10",
     "express": "^5.1.0",

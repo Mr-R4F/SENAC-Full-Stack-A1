@@ -7,6 +7,17 @@
         <title>Document</title>
     </head>
     <body>
+        <form id="product-form" method="post" action="#">
+            <input type="text" id="name" placeholder="Product Name" required autocomplete="off">
+            <input type="text" id="desc" placeholder="Description" required autocomplete="off">
+
+            <button type="submit" id="btn-showResults">Enviar</button>
+        </form>
+        <br>
+
+        <div id="results"></div>
         
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="../js/script.js" type="module"></script>
     </body>
 </html>
