@@ -23,30 +23,30 @@
         <div class='clearfix'>
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.44% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Statements</span>
-                <span class='fraction'>17/18</span>
+                <span class='fraction'>24/27</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">76.47% </span>
+                <span class="strong">86.66% </span>
                 <span class="quiet">Branches</span>
-                <span class='fraction'>13/17</span>
+                <span class='fraction'>26/30</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
                 <span class="strong">100% </span>
                 <span class="quiet">Functions</span>
-                <span class='fraction'>1/1</span>
+                <span class='fraction'>9/9</span>
             </div>
         
             
             <div class='fl pad1y space-right2'>
-                <span class="strong">94.44% </span>
+                <span class="strong">88.88% </span>
                 <span class="quiet">Lines</span>
-                <span class='fraction'>17/18</span>
+                <span class='fraction'>24/27</span>
             </div>
         
             
@@ -80,48 +80,75 @@
 <a name='L15'></a><a href='#L15'>15</a>
 <a name='L16'></a><a href='#L16'>16</a>
 <a name='L17'></a><a href='#L17'>17</a>
-<a name='L18'></a><a href='#L18'>18</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">7x</span>
+<a name='L18'></a><a href='#L18'>18</a>
+<a name='L19'></a><a href='#L19'>19</a>
+<a name='L20'></a><a href='#L20'>20</a>
+<a name='L21'></a><a href='#L21'>21</a>
+<a name='L22'></a><a href='#L22'>22</a>
+<a name='L23'></a><a href='#L23'>23</a>
+<a name='L24'></a><a href='#L24'>24</a>
+<a name='L25'></a><a href='#L25'>25</a>
+<a name='L26'></a><a href='#L26'>26</a>
+<a name='L27'></a><a href='#L27'>27</a></td><td class="line-coverage quiet"><span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">67x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">16x</span>
+<span class="cline-any cline-yes">67x</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-yes">7x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">3x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">1x</span>
-<span class="cline-any cline-yes">7x</span></td><td class="text"><pre class="prettyprint lang-js">export function checkPasswordStrength(passw) {
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">export function checkPasswordStrength(passw) {
     const hasLetters = /[a-zA-Z]/.test(passw);
     const hasNumbers = /[0-9]/.test(passw);
     const hasSpecialChars = /[!@#$%^&amp;*()_+\-=\[\]{};':"\\|,.&lt;&gt;\/?]/.test(passw);
 &nbsp;
-    
-    if(passw === null || passw === undefined || passw.length &lt; 6) return "weak";
+    const conditions = [
+        { check: () =&gt; passw === null || passw === undefined || passw === "", result: "invalid" },
+        { check: () =&gt; passw.length &lt; 6, result: "weak" },
 &nbsp;
-    if ((passw.length &lt; 6<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; (hasLetters || hasNumbers))</span> || passw.length &lt; 6<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; (hasLetters<span class="branch-0 cbranch-no" title="branch not covered" > </span>&amp;&amp; hasNumbers))</span> <span class="branch-0 cbranch-no" title="branch not covered" >{</span>
-<span class="cstat-no" title="statement not covered" >        return "weak";</span>
-    } else if ((passw.length &gt;= 6 &amp;&amp; passw.length &lt;= 10) &amp;&amp; (hasLetters &amp;&amp; hasNumbers)) {
-        return "medium";
-    } else if (passw.length &gt; 10 &amp;&amp; (hasLetters &amp;&amp; hasNumbers &amp;&amp; hasSpecialChars)) {
-        return "strong";
-    } else {
-        return "invalid";
-    }
-}</pre></td></tr></table></pre>
+        { check: () =&gt; (passw.length &gt;= 6 &amp;&amp; passw.length &lt;= 10) &amp;&amp; (hasLetters &amp;&amp; hasNumbers), result: "medium" },
+        { check: () =&gt; (passw.length &gt;= 6 &amp;&amp; passw.length &lt;= 10) &amp;&amp; (hasLetters || hasNumbers), result: "weak" },
+&nbsp;
+        { check: () =&gt; (passw.length &lt; 6<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; (hasLetters || hasNumbers))</span> || (passw.length &lt; 6<span class="branch-0 cbranch-no" title="branch not covered" > &amp;&amp; (hasLetters<span class="branch-0 cbranch-no" title="branch not covered" > </span>&amp;&amp; hasNumbers)),</span> result: "weak" },
+&nbsp;
+        { check: () =&gt; passw.length &gt; 10 &amp;&amp; (hasLetters &amp;&amp; hasNumbers &amp;&amp; hasSpecialChars), result: "strong" },
+        { check: () =&gt; passw.length &gt; 10 &amp;&amp; (hasLetters &amp;&amp; hasNumbers) || passw.length &gt; 10 &amp;&amp; (hasLetters &amp;&amp; hasSpecialChars) || passw.length &gt; 10 &amp;&amp; (hasNumbers &amp;&amp; hasSpecialChars), result: "medium" },
+        { check: () =&gt; passw.length &gt; 10 &amp;&amp; (hasLetters || hasNumbers || hasSpecialChars), result: "weak" },
+    ];
+&nbsp;
+    for (const condition of conditions) {
+        if (condition.check()) {
+            return condition.result;
+        }
+<span class="branch-0 cbranch-no" title="branch not covered" >    }</span>
+<span class="cstat-no" title="statement not covered" ></span>
+<span class="cstat-no" title="statement not covered" >    return "invalid";</span>
+<span class="cstat-no" title="statement not covered" >}</span></pre></td></tr></table></pre>
 
                 <div class='push'></div><!-- for sticky footer -->
             </div><!-- /wrapper -->
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank" rel="noopener noreferrer">istanbul</a>
-                at 2025-04-23T07:32:10.392Z
+                at 2025-04-23T19:36:27.553Z
             </div>
         <script src="prettify.js"></script>
         <script>

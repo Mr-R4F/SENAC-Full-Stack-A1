@@ -1,27 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1745393530417" clover="3.2.0">
-  <project timestamp="1745393530417" name="All files">
-    <metrics statements="18" coveredstatements="17" conditionals="17" coveredconditionals="13" methods="1" coveredmethods="1" elements="36" coveredelements="31" complexity="0" loc="18" ncloc="18" packages="1" files="1" classes="1"/>
+<coverage generated="1745436987578" clover="3.2.0">
+  <project timestamp="1745436987578" name="All files">
+    <metrics statements="27" coveredstatements="24" conditionals="30" coveredconditionals="26" methods="9" coveredmethods="9" elements="66" coveredelements="59" complexity="0" loc="27" ncloc="27" packages="1" files="1" classes="1"/>
     <file name="function.js" path="E:\Gihub Projects\SENAC-Full-Stack-A1\main\function.js">
-      <metrics statements="18" coveredstatements="17" conditionals="17" coveredconditionals="13" methods="1" coveredmethods="1"/>
+      <metrics statements="27" coveredstatements="24" conditionals="30" coveredconditionals="26" methods="9" coveredmethods="9"/>
       <line num="1" count="1" type="cond" truecount="1" falsecount="0"/>
-      <line num="2" count="7" type="stmt"/>
-      <line num="3" count="7" type="stmt"/>
-      <line num="4" count="7" type="stmt"/>
-      <line num="5" count="7" type="stmt"/>
-      <line num="6" count="7" type="stmt"/>
-      <line num="7" count="7" type="cond" truecount="4" falsecount="0"/>
-      <line num="8" count="3" type="stmt"/>
-      <line num="9" count="7" type="cond" truecount="1" falsecount="4"/>
-      <line num="10" count="0" type="stmt"/>
-      <line num="11" count="7" type="cond" truecount="4" falsecount="0"/>
-      <line num="12" count="1" type="stmt"/>
-      <line num="13" count="3" type="cond" truecount="3" falsecount="0"/>
-      <line num="14" count="1" type="stmt"/>
-      <line num="15" count="1" type="stmt"/>
-      <line num="16" count="1" type="stmt"/>
-      <line num="17" count="1" type="stmt"/>
-      <line num="18" count="7" type="stmt"/>
+      <line num="2" count="16" type="stmt"/>
+      <line num="3" count="16" type="stmt"/>
+      <line num="4" count="16" type="stmt"/>
+      <line num="5" count="16" type="stmt"/>
+      <line num="6" count="16" type="stmt"/>
+      <line num="7" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="8" count="16" type="cond" truecount="1" falsecount="0"/>
+      <line num="9" count="16" type="stmt"/>
+      <line num="10" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="11" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="12" count="16" type="stmt"/>
+      <line num="13" count="16" type="cond" truecount="1" falsecount="3"/>
+      <line num="14" count="16" type="stmt"/>
+      <line num="15" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="16" count="16" type="cond" truecount="6" falsecount="0"/>
+      <line num="17" count="16" type="cond" truecount="3" falsecount="0"/>
+      <line num="18" count="16" type="stmt"/>
+      <line num="19" count="16" type="stmt"/>
+      <line num="20" count="16" type="cond" truecount="1" falsecount="0"/>
+      <line num="21" count="67" type="cond" truecount="1" falsecount="0"/>
+      <line num="22" count="16" type="stmt"/>
+      <line num="23" count="16" type="stmt"/>
+      <line num="24" count="67" type="cond" truecount="0" falsecount="1"/>
+      <line num="25" count="0" type="stmt"/>
+      <line num="26" count="0" type="stmt"/>
+      <line num="27" count="0" type="stmt"/>
     </file>
   </project>
 </coverage>
